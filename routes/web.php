@@ -20,3 +20,4 @@ Route::get('/', function () {
 Route::get('/anggota','App\Http\Controllers\AnggotaController@index');
 Route::get('/join','App\Http\Controllers\JoinController@index');
 Route::get('/likejoin','App\Http\Controllers\LikeJoinController@index');
+Route::get('/like','App\Http\Controllers\LikeController@index');
