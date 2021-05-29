@@ -12,7 +12,8 @@ class JoinController extends Controller
     {
     	
     	$anggota = DB::table('anggota')
-            ->rightJoin('pinjam', 'anggota_id', '=', 'anggota.anggota_id')
+            ->leftJoin('pinjam', 'anggota.anggota_id', '=', 'pinjam.anggota_id')
+            
             ->get(); 
 
     	return view('join',['anggota' => $anggota]);

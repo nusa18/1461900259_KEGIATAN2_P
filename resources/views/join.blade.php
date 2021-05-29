@@ -18,7 +18,7 @@
 			<th>Alamat</th>
 			<th>Jenis Kelamin</th>
 			<th>Telp</th>
-			<th>Telp</th>
+			<th>Tanggal Pinjam</th>
 			
 		</tr>
 		@foreach($anggota as $p)
@@ -27,7 +27,7 @@
 			<td>{{ $p->anggota_alamat }}</td>
 			<td>{{ $p->anggota_jk }}</td>
 			<td>{{ $p->anggota_telp }}</td>
-			<td>{{ $p->pinjam->tgl_pinjam }}</td>
+			<td>{{ $p->tgl_pinjam }}</td>
 		</tr>
 		@endforeach
 	</table>
